@@ -21,7 +21,14 @@
 // });
 
 document.addEventListener('prechange', function(event) {
-  document.querySelector(
-    'ons-toolbar .center'
-  ).innerHTML = event.tabItem.getAttribute('label');
+  // document.querySelector(
+  //   'ons-toolbar .center'
+  // ).innerHTML = event.tabItem.getAttribute('label');
+  $('.center').html(event.tabItem.getAttribute('label'));
 });
+
+// $(document).on('prechange', function(event) {
+//   console.log(event.currentTarget);
+//   //$(event.target).attr('label');
+//   //$('.center').html($(event.target).attr('label'));
+// });
