@@ -27,6 +27,7 @@ document.addEventListener('prechange', function(event) {
   $('.center').html(event.tabItem.getAttribute('label'));
 });
 
+//--- below not working ---
 // $(document).on('prechange', function(event) {
 //   console.log(event.currentTarget);
 //   //$(event.target).attr('label');
